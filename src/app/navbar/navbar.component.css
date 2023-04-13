@@ -1,0 +1,54 @@
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.box-button {
+  background-color: rgb(18, 155, 63);
+  padding: 10px;
+  border-radius: 50px;
+  border: 0;
+  width: 180px;
+  text-decoration: none;
+  color: white;
+}
+
+.box-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.nav ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.nav img {
+  height: 70px;
+  width: 300px;
+  margin-left: -55px;
+  margin-top: 5px;
+}
+
+.nav h1{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.nav li {
+  font-size: 20px;
+  padding-left: 40px;
+  padding-top: 15px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.raise-button {
+  padding-top: 20px;
+}

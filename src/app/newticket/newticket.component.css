@@ -1,0 +1,30 @@
+.raise-button {
+  padding: 10px;
+  border: 0;
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  width: 150px;
+}
+
+#cat {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 7px;
+}
+
+.file-upload {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: red;
+}
+
+.Heading2 {
+  margin-top: 25px;
+  font-size: xx-large;
+  color: white;
+}
+
+#category {
+  margin-bottom: 10px;
+}

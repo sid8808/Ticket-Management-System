@@ -1,0 +1,94 @@
+{
+  "user": [
+    {
+      "name": "Siddhant Pandey",
+      "email": "sid@test.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "Tony Stark",
+      "password": "abc@123",
+      "email": "tony@test.com",
+      "id": 2
+    },
+    {
+      "name": "Peter Parker",
+      "password": "abc@123",
+      "email": "Peter@test.com",
+      "id": 3
+    },
+    {
+      "name": "Bruce Wayne",
+      "password": "abc@123",
+      "email": "Bruce@test.com",
+      "id": 4
+    },
+    {
+      "name": "Vibha Pandey",
+      "password": "abc@123",
+      "email": "Vibha@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Peter Quil",
+      "password": "abc@123",
+      "email": "PeterQuil@test.com",
+      "id": 6
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 7
+    },
+    {
+      "name": "Naman",
+      "password": "abc@123",
+      "email": "naman@test.com",
+      "id": 8
+    },
+    {
+      "name": "kanha",
+      "password": "abc@123",
+      "email": "kanha@test.com",
+      "id": 9
+    },
+    {
+      "name": "Siddhant",
+      "password": "abc@123",
+      "email": "Siddhant@test.com",
+      "id": 10
+    },
+    {
+      "name": "Snoop Dog",
+      "password": "abc@123",
+      "email": "Snoop@test.com",
+      "id": 11
+    },
+    {
+      "name": "abc",
+      "password": "abc@",
+      "email": "abc@test.com",
+      "id": 12
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 13
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 14
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 15
+    }
+  ]
+}

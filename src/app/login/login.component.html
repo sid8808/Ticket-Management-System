@@ -1,0 +1,24 @@
+<div class="login-box">
+    <h2>TRAFFIC TICKET SUPPORT</h2>
+    <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)"  class="common-form">
+      <div class="user-box">
+        <input type="text" ngModel name="name" required="">
+        <label>Enter Name</label>
+      </div>
+      <div class="user-box">
+        <input type="text" ngModel name="email" required="">
+        <label>Enter Email</label>
+      </div>
+      <div class="user-box">
+        <input type="password" ngModel name="password" required="">
+        <label>Password</label>
+      </div>
+      <a routerLink="/home">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Login
+      </a>
+    </form>
+</div>
