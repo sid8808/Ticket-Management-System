@@ -11,8 +11,8 @@ body {
 
 .login-box {
   position: absolute;
-  top: 55%;
-  left: 22%;
+  top: 50%;
+  left: 50%;
   width: 500px;
   height: 500px;
   padding: 30px;
@@ -67,7 +67,8 @@ body {
 }
 
 .login-box form a {
-  width: 80px;
+  width: 400px;
+  text-align: center;
   position: relative;
   display: inline-block;
   padding: 10px 20px;
