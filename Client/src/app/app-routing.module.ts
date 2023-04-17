@@ -7,20 +7,20 @@ import { NewticketComponent } from './newticket/newticket.component';
 
 const routes: Routes = [
   {
-    path:'home',
-    component:HomeComponent,
+    path: 'home',
+    component: HomeComponent,
   },
   {
-    path:'profile',
-    component:ProfileComponent
+    path: 'profile',
+    component: ProfileComponent
   },
   {
-    path:'login',
-    component:LoginComponent
+    path: '',
+    component: LoginComponent
   },
   {
-    path:'newticket',
-    component:NewticketComponent
+    path: 'newticket',
+    component: NewticketComponent
   }
 ];
 
