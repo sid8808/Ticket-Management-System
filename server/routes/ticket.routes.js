@@ -18,5 +18,5 @@ module.exports = app => {
     
     router.delete("/", tickets.deleteAll);
     
-    app.use('/api/tickes', router);
+    app.use('/api/tickets', router);
 };

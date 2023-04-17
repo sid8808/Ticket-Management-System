@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { SignUp } from '../data-type';
+// import { SignUp } from '../data-type';
 import { Observable } from 'rxjs'
 
-const baseUrl = 'http://localhost:8080/api/tutorials';
+const baseUrl = 'http://localhost:8080/api/tickets';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
     return this.http.get(baseUrl);
@@ -28,17 +28,19 @@ export class UserService {
     return this.http.put(`${baseUrl}/${id}`, data);
   }
 
-  // delete(id, data): Observable<any> {
-  //   return this.http.delete(baseUrl);
-  // }
+  delete(id, data): Observable<any> {
+    return this.http.delete(baseUrl);
+  }
 
   findByTitle(title): Observable<any> {
     return this.http.get(`${baseUrl}?title=${title}`);
   }
 
+  // getData() {
+  //   return this.http.get(`${baseUrl}/data`);
+  // }
+  // sellerSignUp(data:SignUp){
+  //   return this.http.post('http://localhost:3000/user',data)
 
-  sellerSignUp(data:SignUp){
-    return this.http.post('http://localhost:3000/user',data)
-
-  }
+  // }
 }
