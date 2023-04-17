@@ -84,3 +84,7 @@ input {
   font-size: 20px;
   padding: 5px;
 }
+
+.col-md-6 {
+  background-color: white;
+}

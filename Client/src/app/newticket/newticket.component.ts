@@ -40,6 +40,8 @@
 // }
 import { Component, OnInit } from "@angular/core";
 import { UserService } from 'src/app/services/user.service';
+import { TicketApi } from "../utils/Api";
+import { iTicket } from "src/@types/Ticket";
 
 @Component({
   selector: 'app-newticket',
@@ -48,33 +50,42 @@ import { UserService } from 'src/app/services/user.service';
 })
 
 export class NewticketComponent implements OnInit {
-  ticket = {
-    title: '',
-    description: '',
-    published: false
-  };
-  submitted = false;
+  // ticket = {
+  //   title: '',
+  //   description: '',
+  //   published: false
+  // };
+  //submitted = false;
 
-  constructor(private UserService: UserService) { }
+  ticket: iTicket = {
+    title: "",
+    subject: "",
+    description: "",
+
+  }
+  submitted: boolean = false;
+
+  constructor(private readonly ticketsApi: TicketApi) { }
 
   ngOnInit(): void {
   }
 
-saveTicket(): void {
-  const data = {
-    title: this.ticket.title,
-    description: this.ticket.description
-  };
-  this.UserService.create(data).subscribe(
-    response => {
-      console.log(response);
-      this.submitted = true ;
-    },
-    error => {
-      console.log(error);
-    }
-  );
-}
+  saveTicket(): void {
+    const data = {
+      title: this.ticket.title,
+      description: this.ticket.description,
+      subject: this.ticket.subject,
+    };
+    this.ticketsApi.createTicket(data).subscribe(
+      response => {
+        console.log(response);
+        this.submitted = true;
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
   newTicket(): void {
     this.submitted = false;
     this.ticket = {

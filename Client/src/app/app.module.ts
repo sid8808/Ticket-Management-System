@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NewticketComponent } from './newticket/newticket.component';
 import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
+import { TicketApi } from './utils/Api';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { TicketDetailsComponent } from './ticket-details/ticket-details.componen
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [TicketApi],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

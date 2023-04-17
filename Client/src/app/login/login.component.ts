@@ -12,7 +12,7 @@ export class LoginComponent {
   constructor(private user:UserService, private router: Router){}
 
     ngOnInit():void{}
-    signUp(data:SignUp):void{
+   signUp(data:SignUp):void{
         this.user.sellerSignUp(data).subscribe((result)=>{
           if(result){
               this.router.navigate(['home'])
