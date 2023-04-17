@@ -9,17 +9,25 @@ var corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extend: true}));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
 
-const db = require("./api/models");
+const db = require("./models");
 
-db.sequelize.sync();
-prompt.length("/", (req, res) => {
+db.sequelize.sync()
+  .then(() => {
+    console.log("Synced db.");
+  })
+  .catch((err) => {
+    console.log("Failed to sync db: " + err.message);
+  });
+
+
+app.get("/", (req, res) => {
     res.json({message: "Welcome to Traffic Support System"});
 })
 
-require("./app/routes/ticket.routes")(app);
+require("./routes/ticket.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, ()=> {

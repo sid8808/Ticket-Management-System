@@ -14,7 +14,7 @@
     "api",
     "postgresql"
 ],
-  "author": "",
+  "author": "Siddhant Pandey",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
