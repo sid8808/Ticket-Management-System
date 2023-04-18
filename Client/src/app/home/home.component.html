@@ -9,12 +9,6 @@
       src="https://www.pinkvilla.com/imageresize/chris_future_thor.jpg?width=752&t=pvorg"
       alt=""
     />
-    <input
-      type="text"
-      name="company-name"
-      id="view"
-      placeholder="Company Name"
-    />
     <input type="text" name="first-name" id="view" placeholder="First Name" />
     <input type="text" name="last-name" id="view" placeholder="Last Name" />
     <input
@@ -30,42 +24,12 @@
       placeholder="Contact Number"
     />
   </div>
-  <!-- <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT                   STATUS"></textarea>
-        <textarea name="Ticket-sub" id="ticket" cols="30" rows="3" placeholder="SUBJECT   STATUS"></textarea> -->
-  <div class="list row">
-    <div class="col-md-8">
-      <div class="input-group mb-3">
-        <!-- <input
-          type="text"
-          class="form-control"
-          placeholder="Search by Title"
-          [(ngModel)]="title"
-        /> -->
-        <!-- <div class="input-group-append">
-          <button
-            class="btn btn-outline-secondary"
-            type="button"
-            (click)="searchTitle()"
-          >
-            Search
-          </button>
-        </div> -->
-      </div>
-    </div>
+  <div class="list-row">
     <div class="col-md-6">
-      <h4>Ticket List</h4>
+      <h4>TICKET LIST</h4>
       <ul class="list-group-item">
         <li
-          class="list-group-item"
+          class="that-ticket"
           *ngFor="let ticket of allUserTickets; let i = index"
           [class.active]="i == currentIndex"
           (click)="setActiveTicket(ticket, i)"
@@ -78,33 +42,33 @@
               RemoveAll
             </button> -->
     </div>
-    <div class="col-md-6">
-      <div *ngIf="currentTicket">
-        <h4>Ticket</h4>
-        <div>
-          <label><strong>Title:</strong></label>
-          {{ currentTicket.title }}
-        </div>
-        <div>
-          <label><strong>Description:</strong></label>
-          {{ currentTicket.description }}
-        </div>
-        <div>
-          <label><strong>Status:</strong></label>
-          {{ currentTicket.published ? "Published" : "Pending" }}
-        </div>
+  </div>
+  <div class="Ticket-Desc">
+    <div *ngIf="currentTicket">
+      <h4>TICKET</h4>
+      <div>
+        <label><strong>Title:</strong></label>
+        {{ currentTicket.title }}
+      </div>
+      <div>
+        <label><strong>Description:</strong></label>
+        {{ currentTicket.description }}
+      </div>
+      <div>
+        <label><strong>Status:</strong></label>
+        {{ currentTicket.published ? "Published" : "Pending" }}
+      </div>
 
-        <a
+      <!-- <a
           class="badge badge-warning"
           routerLink="/tickets/{{ currentTicket.id }}"
           >Edit</a
-        >
-      </div>
+        > -->
+    </div>
 
-      <div *ngIf="!currentTicket">
-        <br />
-        <p>Please click on the Ticket...</p>
-      </div>
+    <div class="zero-desc" *ngIf="!currentTicket">
+      <br />
+      <p>PLEASE CLICK ON THE TICKET FOR DESCRIPTION</p>
     </div>
   </div>
 </div>

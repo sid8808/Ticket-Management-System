@@ -1,7 +1,52 @@
+.list-row {
+  background-color: rgb(150, 151, 155);
+  width: 20%;
+  padding-top: 15px;
+}
+.list-row h4 {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: white;
+  text-shadow: 0 1px 3px #161616, 0 0 5px #0a0a0a;
+}
+.Ticket-Desc {
+  background-color: rgb(109, 105, 105);
+  width: 55%;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+}
+.zero-desc {
+  text-align: center;
+  margin-top: -20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 27px;
+  font-weight: 600;
+  text-shadow: 0 1px 3px #161616, 0 0 5px #0a0a0a;
+}
+.Ticket-Desc h4 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  text-shadow: 0 1px 3px #161616, 0 0 5px #0a0a0a;
+}
+
+.list-group-item li{
+  margin-top: 15px;
+}
+.list-group-item {
+  margin-bottom: 10px;
+  height: 40px;
+}
+
 #container {
   display: flex;
   justify-content: space-around;
-  height: 707px;
+  height: 550px;
 }
 
 .side-bar {
@@ -61,29 +106,8 @@ input {
   color: rgb(255, 255, 255);
   text-shadow: 0 1px 3px #161616, 0 0 5px #0a0a0a;
 }
-.box {
-  margin-bottom: 20px;
-}
-.box-button {
-  background-color: rgb(162, 26, 224);
-  padding: 10px;
-  border-radius: 50px;
-  border: 0;
-  width: 180px;
-  text-decoration: none;
-  color: white;
-}
 
-.box-button a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-}
 
-#desc-ticket {
-  font-size: 20px;
-  padding: 5px;
-}
 
 .col-md-6 {
   background-color: white;

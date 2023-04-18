@@ -1,34 +1,125 @@
 .submit-form{
-  color: white;
+  color: rgb(0, 0, 0);
+  background-color: grey;
 }
 
-.raise-button {
-  padding: 10px;
-  border: 0;
-  background-color: red;
-  color: white;
-  border-radius: 50px;
-  width: 150px;
-}
-
-#cat {
-  width: 300px;
+.form-group1 input {
+  margin-left: 123px;
   height: 30px;
-  margin-bottom: 7px;
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 0;
+  padding-left: 10px ;
 }
 
-.file-upload {
-  padding-top: 5px;
-  padding-bottom: 10px;
-  color: red;
+.form-group1 label {
+  margin-left: 20px;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
-.Heading2 {
-  margin-top: 25px;
-  font-size: xx-large;
-  color: white;
+.form-group1 {
+  padding-top: 20px;
 }
 
-#category {
-  margin-bottom: 10px;
+
+.form-group2 select {
+  margin-left: 140px;
+  height: 30px;
+  width: 415px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 0;
+  padding-left: 10px ;
 }
+
+.form-group2 label {
+  margin-left: 18px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.form-group2 {
+  padding-top: 10px;
+}
+
+.form-group7 option {
+  margin-right: 20px;
+}
+
+.form-group3 input {
+  margin-left: 150px;
+  height: 30px;
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 0;
+  padding-left: 10px ;
+}
+
+.form-group3 label {
+  margin-left: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-group3 {
+  padding-top: 10px;
+}
+
+.form-group4 input {
+  margin-left: 20px;
+  height: 300px;
+  width: 800px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 0;
+  padding-left: 10px;
+}
+
+.form-group4 label {
+  margin-left: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.form-group4 {
+  padding-top: 10px;
+}
+
+.form-group5 input {
+  margin-left: 75px;
+  border-radius: 15px;
+  border: 0;
+  padding-left: 10px;
+}
+
+.form-group5 label {
+  margin-left: 25px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.form-group5 {
+  padding-top: 10px;
+}
+
+.form-group6 button {
+  margin-left: 240px;
+  height: 30px;
+  width: 150px;
+  margin-top: 15px;
+  border-radius: 15px;
+  border: 0;
+  padding-left: 10px;
+  background-color: green;
+  color: rgb(255, 255, 255);
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+

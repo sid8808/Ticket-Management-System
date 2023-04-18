@@ -1,38 +1,11 @@
-<!-- <div>
-  <h2 class="Heading2">TICKET DISCRIPTION HERE...</h2>
-  <input type="text" name="category" id="cat" placeholder="CATEGORY" /><br />
-  <textarea
-    name="Deatils"
-    id=""
-    cols="50"
-    rows="2"
-    placeholder="Subject of Ticket is here..."
-  ></textarea>
-  <br />
-  <textarea
-    name="Deatils"
-    id=""
-    cols="150"
-    rows="20"
-    placeholder="Description of Ticket is here..."
-  ></textarea>
-  <br />
-  <input
-    type="file"
-    class="file-upload"
-    onchange="console.log(event.target.files)"
-  />
-  <br />
-  <button class="raise-button">Raise Ticket</button>
-</div> -->
 <div>
   <app-navbar></app-navbar>
 </div>
 <div>
   <div class="submit-form">
     <div *ngIf="!submitted">
-      <div class="form-group">
-        <label for="title">Raise new Ticket</label>
+      <div class="form-group1">
+        <label for="title">TICKET TITLE :</label>
         <input
           type="text"
           class="form-control"
@@ -42,8 +15,17 @@
           name="title"
         />
       </div>
-      <div class="form-group">
-        <label for="subject">Subject</label>
+      <div class="form-group2">
+        <label for="categories">CATEGORY :</label>
+        <select name="categories" class="form-group7">
+          <option value="REFRESH">REFRESH</option>
+          <option value="ZONES">ZONES</option>
+          <option value="ONCORE">ONCORE</option>
+          <option value="DEVELOPMENT">DEVELOPMENT</option>
+        </select>
+      </div>
+      <div class="form-group3">
+        <label for="subject">SUBJECT :</label>
         <input
           type="text"
           class="form-control"
@@ -53,8 +35,8 @@
           name="subject"
         />
       </div>
-      <div class="form-group">
-        <label for="Description">Description</label>
+      <div class="form-group4">
+        <label for="Description">DESCRIPTION OF THE TICKET :</label>
         <input
           type="text"
           id="description"
@@ -62,7 +44,13 @@
           [(ngModel)]="ticket.description"
         />
       </div>
-      <button (click)="saveTicket()" class="btn btn-success">Submit</button>
+      <div class="form-group5">
+        <label for="attatchment">ADD ATTATCHMENT</label>
+        <input type="file">
+      </div>
+      <div class="form-group6">
+      <button (click)="saveTicket()" class="form-group6">SUBMIT</button>
+      </div>
     </div>
 
     <div *ngIf="submitted">
