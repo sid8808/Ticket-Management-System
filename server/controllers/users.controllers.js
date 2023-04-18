@@ -39,3 +39,6 @@ exports.findAll = (req, res) => {
       });
     });
 };
+exports.getCurrentUser = (req, res) => {
+  return res.send(req.user);
+};

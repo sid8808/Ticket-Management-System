@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user.service';
 import { TicketApi } from '../utils/Api';
 import { iTicket } from 'src/@types/Ticket';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +13,27 @@ export class HomeComponent implements OnInit {
   currentTicket = null;
   currentIndex = -1;
   title = '';
+  public profilePicUrl: string = "https://www.pinkvilla.com/imageresize/chris_future_thor.jpg?width=752&t=pvorg";
+  public firstName: string = "N/A";
+  public lastName: string = "N/A";
+  public email: string = "N/A";
+
   allUserTickets: iTicket[] = [];
 
-  constructor(private readonly ticketsApi: TicketApi) { }
+  constructor(private readonly ticketsApi: TicketApi, private readonly currentRoute: ActivatedRoute, private readonly router: Router) { }
 
   ngOnInit(): void {
+    this.ticketsApi.getCurrentUserDetails().then(e => {
+      // console.log(e);
+      this.profilePicUrl = e["picture"];
+
+      this.firstName = e["given_name"]
+      this.lastName = e["family_name"]
+      this.email = e["email"]
+
+    }).catch(e => {
+      this.router.navigate([""])
+    })
     this.retrieveTicket();
   }
 

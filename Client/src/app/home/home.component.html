@@ -6,23 +6,37 @@
     <h1 class="heading1">PROFILE</h1>
     <img
       class="profile-image"
-      src="https://www.pinkvilla.com/imageresize/chris_future_thor.jpg?width=752&t=pvorg"
+      [src]="profilePicUrl"
       alt=""
+      referrerpolicy="no-referrer"
     />
-    <input type="text" name="first-name" id="view" placeholder="First Name" />
-    <input type="text" name="last-name" id="view" placeholder="Last Name" />
+    <input
+      type="text"
+      name="first-name"
+      id="view"
+      placeholder="First Name"
+      [value]="firstName"
+    />
+    <input
+      type="text"
+      name="last-name"
+      id="view"
+      placeholder="Last Name"
+      [value]="lastName"
+    />
     <input
       type="text"
       name="email"
       id="view"
+      [value]="email"
       placeholder="Registered Email id"
     />
-    <input
+    <!-- <input
       type="number"
       name="contact"
       id="view"
       placeholder="Contact Number"
-    />
+    /> -->
   </div>
   <div class="list-row">
     <div class="col-md-6">

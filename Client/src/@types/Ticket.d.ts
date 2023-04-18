@@ -6,5 +6,4 @@ export interface iTicket {
     published?: boolean;
     // createdAt: Date
     // updatedAt: Date
-
 }
