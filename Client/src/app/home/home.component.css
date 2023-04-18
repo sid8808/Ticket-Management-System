@@ -35,8 +35,9 @@
   text-shadow: 0 1px 3px #161616, 0 0 5px #0a0a0a;
 }
 
-.list-group-item li{
+.list-group-item li {
   margin-top: 15px;
+  font-size: large;
 }
 .list-group-item {
   margin-bottom: 10px;
@@ -106,9 +107,6 @@ input {
   color: rgb(255, 255, 255);
   text-shadow: 0 1px 3px #161616, 0 0 5px #0a0a0a;
 }
-
-
-
-.col-md-6 {
-  background-color: white;
+.that-ticket {
+  cursor: pointer;
 }

@@ -60,6 +60,7 @@ export class NewticketComponent implements OnInit {
   ticket: iTicket = {
     title: "",
     subject: "",
+    categories: "",
     description: "",
 
   }
@@ -74,6 +75,7 @@ export class NewticketComponent implements OnInit {
     const data = {
       title: this.ticket.title,
       description: this.ticket.description,
+      categories: this.ticket.categories,
       subject: this.ticket.subject,
     };
     this.ticketsApi.createTicket(data).subscribe(

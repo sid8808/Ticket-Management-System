@@ -7,6 +7,7 @@
       <div class="form-group1">
         <label for="title">TICKET TITLE :</label>
         <input
+          placeholder="Enter the Title"
           type="text"
           class="form-control"
           id="title"
@@ -17,7 +18,11 @@
       </div>
       <div class="form-group2">
         <label for="categories">CATEGORY :</label>
-        <select name="categories" class="form-group7">
+        <select
+          name="categories"
+          class="form-group7"
+          [(ngModel)]="ticket.categories"
+        >
           <option value="REFRESH">REFRESH</option>
           <option value="ZONES">ZONES</option>
           <option value="ONCORE">ONCORE</option>
@@ -27,6 +32,7 @@
       <div class="form-group3">
         <label for="subject">SUBJECT :</label>
         <input
+          placeholder="Enter the Subject"
           type="text"
           class="form-control"
           id="subject"
@@ -38,6 +44,7 @@
       <div class="form-group4">
         <label for="Description">DESCRIPTION OF THE TICKET :</label>
         <input
+          placeholder="Enter the Description"
           type="text"
           id="description"
           class="form-control"
@@ -46,10 +53,10 @@
       </div>
       <div class="form-group5">
         <label for="attatchment">ADD ATTATCHMENT</label>
-        <input type="file">
+        <input type="file" />
       </div>
       <div class="form-group6">
-      <button (click)="saveTicket()" class="form-group6">SUBMIT</button>
+        <button (click)="saveTicket()" class="form-group6">SUBMIT</button>
       </div>
     </div>
 

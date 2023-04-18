@@ -13,6 +13,7 @@ exports.create = (req, res) => {
   const ticket = {
     title: req.body.title,
     subject: req.body.subject,
+    categories: req.body.categories,
     description: req.body.description,
     published: req.body.published ? req.body.published : false,
   };

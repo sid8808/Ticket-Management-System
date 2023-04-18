@@ -1,14 +1,25 @@
-<div style="width: 400px; margin: auto;">
+<div style="width: 400px; margin: auto">
   <div *ngIf="currentTicket" class="edit-form">
     <h4>Ticket</h4>
     <form>
       <div class="form-group">
         <label for="title">Title</label>
-        <input class="from-control" type="text" name="title" id="title" [(ngModel)]="currentTicket.title">
+        <input
+          class="from-control"
+          type="text"
+          name="title"
+          id="title"
+          [(ngModel)]="currentTicket.title"
+        />
       </div>
       <div class="form-group">
         <label for="description">Description</label>
-        <input type="text" class="form-control" id="description" [(ngModel)]="currentTicket.description">
+        <input
+          type="text"
+          class="form-control"
+          id="description"
+          [(ngModel)]="currentTicket.description"
+        />
       </div>
       <div class="form-group">
         <label><strong>Status:</strong></label>
@@ -20,26 +31,30 @@
       class="badge bade-primary mr-2"
       *ngIf="!currentTicket.published"
       class="badge badge primary mr-2"
-      (click)="updatePublished(false)">
-        UnPublished
-  </button>
+      (click)="updatePublished(false)"
+    >
+      UnPublished
+    </button>
 
-  <button
+    <button
       class="badge bade-primary mr-2"
       *ngIf="!currentTicket.published"
       class="badge badge primary mr-2"
-      (click)="updatePublished(true)">
-        Published
-  </button>
+      (click)="updatePublished(true)"
+    >
+      Published
+    </button>
 
-  <!-- <button class="badge badge-danger mr-2" (click)="deleteTicket()">Delete</button> -->
+    <!-- <button class="badge badge-danger mr-2" (click)="deleteTicket()">Delete</button> -->
 
-  <button type="submit" class="badge badge-success" (click)="updateTicket()">Update</button>
-  <p>{{ message }}</p>
+    <button type="submit" class="badge badge-success" (click)="updateTicket()">
+      Update
+    </button>
+    <p>{{ message }}</p>
   </div>
 
   <div *ngIf="!currentTicket">
-    <br>
+    <br />
     <p>Cannot access this Ticket...</p>
   </div>
 </div>

@@ -46,18 +46,30 @@
   <div class="Ticket-Desc">
     <div *ngIf="currentTicket">
       <h4>TICKET</h4>
+      <br />
       <div>
         <label><strong>Title:</strong></label>
         {{ currentTicket.title }}
       </div>
+      <br />
+      <div>
+        <label><strong>Category:</strong></label>
+        {{ currentTicket.categories }}
+      </div>
+      <br />
+      <div>
+        <label><strong>Subject:</strong></label>
+        {{ currentTicket.subject }}
+      </div>
+      <br />
       <div>
         <label><strong>Description:</strong></label>
         {{ currentTicket.description }}
       </div>
-      <div>
+      <!-- <div>
         <label><strong>Status:</strong></label>
         {{ currentTicket.published ? "Published" : "Pending" }}
-      </div>
+      </div> -->
 
       <!-- <a
           class="badge badge-warning"
